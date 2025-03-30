@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "config:recommended"
+  ],
+  "baseBranches": [
+    "develop"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "dependencies"
+      ],
+      "rangeStrategy": "pin",
+      "matchPackageNames": [
+      ]
+    },
+    {
+      "matchDepTypes": [
+        "devDependencies"
+      ],
+      "automerge": true,
+      "rangeStrategy": "pin"
+    },
+    {
+      "matchDepTypes": [
+        "engines"
+      ],
+      "rangeStrategy": "auto"
+    }
+  ]
+}
